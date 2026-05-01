@@ -36,13 +36,13 @@ const request = async <TResponse, TBody = unknown>(
 	const res = await fetch(fullUrl, fetchOptions);
 
 	if (res.status == 401 && firstTry) {
-		const success = authStore.refreshAccessToken();
+		/*const success = authStore.refreshAccessToken();
 
 		if (!success) {
 			throw new Error("Неуспешно опресняване на токена.");
 		} else {
 			return request<TResponse, TBody>(method, endpoint, body, false);
-		}
+		}*/
 	}
 
 	if (!res.ok) {
