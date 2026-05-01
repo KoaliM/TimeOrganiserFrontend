@@ -12,20 +12,20 @@ const userStore = useUserStore()
       >
         <RouterLink
           to="/"
-          class="text-[28px] font-bold text-gray-800 hover:text-white transition-colors"
-          style="font-family: 'Vujahday Script', cursive"
+          class="text-[22px] font-bold text-gray-800 hover:text-white transition-colors"
+          style="font-family: 'Quicksand', sans-serif"
           >Befriend</RouterLink
         >
         <RouterLink
           to="/"
-          class="text-[28px] font-bold text-gray-800 hover:text-white transition-colors"
-          style="font-family: 'Vujahday Script', cursive"
+          class="text-[22px] font-bold text-gray-800 hover:text-white transition-colors"
+          style="font-family: 'Quicksand', sans-serif"
           >Meet</RouterLink
         >
         <RouterLink
           to="/"
-          class="text-[28px] font-bold text-gray-800 hover:text-white transition-colors"
-          style="font-family: 'Vujahday Script', cursive"
+          class="text-[22px] font-bold text-gray-800 hover:text-white transition-colors"
+          style="font-family: 'Quicksand', sans-serif"
           >My tasks</RouterLink
         >
       </div>
@@ -37,7 +37,8 @@ const userStore = useUserStore()
         <RouterLink
           to="/login"
           v-if="!userStore.isAuthenticated"
-          class="text-[16px] whitespace-nowrap"
+          class="text-[22px] whitespace-nowrap"
+          style="font-family: 'Quicksand', sans-serif"
           >Login</RouterLink
         >
         <RouterLink to="/profile" v-else class="text-[16px]"></RouterLink>
@@ -47,5 +48,5 @@ const userStore = useUserStore()
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 </style>
