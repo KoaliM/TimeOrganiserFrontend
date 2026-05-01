@@ -5,46 +5,68 @@ const userStore = useUserStore()
 </script>
 
 <template>
-  <span class="flex">
-    <div class="flex justify-center w-full py-3">
-      <div
-        class="flex items-center justify-center gap-12 px-32 py-2 rounded-full bg-linear-to-br from-[#FA5BAF]/30 to-[#E83E8C]/50 backdrop-blur-xl shadow-2xl shadow-pink-300/40"
+  <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#FA5BAF]/10">
+    <div class="flex items-center justify-between px-6 md:px-12 py-4">
+      <!-- Logo -->
+      <RouterLink
+        to="/"
+        class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] hover:opacity-80 transition-opacity"
+        style="font-family: 'Quicksand', sans-serif"
       >
+        TimeOrganiser
+      </RouterLink>
+
+      <!-- Center Navigation Links -->
+      <div class="hidden md:flex items-center gap-8">
         <RouterLink
           to="/"
-          class="text-[22px] font-bold text-gray-800 hover:text-white transition-colors"
+          class="text-base font-semibold text-gray-700 hover:text-[#FA5BAF] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-linear-to-r after:from-[#FA5BAF] after:to-[#E83E8C] hover:after:w-full after:transition-all"
           style="font-family: 'Quicksand', sans-serif"
-          >Befriend</RouterLink
         >
+          Home
+        </RouterLink>
         <RouterLink
-          to="/"
-          class="text-[22px] font-bold text-gray-800 hover:text-white transition-colors"
+          to="/friends"
+          class="text-base font-semibold text-gray-700 hover:text-[#FA5BAF] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#FA5BAF] after:to-[#E83E8C] hover:after:w-full after:transition-all"
           style="font-family: 'Quicksand', sans-serif"
-          >Meet</RouterLink
         >
+          Befriend
+        </RouterLink>
         <RouterLink
-          to="/"
-          class="text-[22px] font-bold text-gray-800 hover:text-white transition-colors"
+          to="/schedule"
+          class="text-base font-semibold text-gray-700 hover:text-[#FA5BAF] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#FA5BAF] after:to-[#E83E8C] hover:after:w-full after:transition-all"
           style="font-family: 'Quicksand', sans-serif"
-          >My tasks</RouterLink
         >
+          Meet
+        </RouterLink>
+        <RouterLink
+          to="/tasks"
+          class="text-base font-semibold text-gray-700 hover:text-[#FA5BAF] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-[#FA5BAF] after:to-[#E83E8C] hover:after:w-full after:transition-all"
+          style="font-family: 'Quicksand', sans-serif"
+        >
+          My tasks
+        </RouterLink>
       </div>
-    </div>
-    <div class="flex items-center justify-end px-10">
-      <button
-        class="rounded-4xl bg-black px-20 py-1 text-white font-semibold hover:bg-[#FA5BAF]/60 transition-colors"
+
+      <!-- Auth Button -->
+      <RouterLink
+        v-if="!userStore.isAuthenticated"
+        to="/login"
+        class="px-6 md:px-8 py-2 bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-pink-300/40 transition-all duration-300 text-sm md:text-base"
+        style="font-family: 'Quicksand', sans-serif"
       >
-        <RouterLink
-          to="/login"
-          v-if="!userStore.isAuthenticated"
-          class="text-[22px] whitespace-nowrap"
-          style="font-family: 'Quicksand', sans-serif"
-          >Login</RouterLink
-        >
-        <RouterLink to="/profile" v-else class="text-[16px]"></RouterLink>
-      </button>
+        Login
+      </RouterLink>
+      <RouterLink
+        v-else
+        to="/profile"
+        class="px-6 md:px-8 py-2 bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-pink-300/40 transition-all duration-300 text-sm md:text-base"
+        style="font-family: 'Quicksand', sans-serif"
+      >
+        Profile
+      </RouterLink>
     </div>
-  </span>
+  </nav>
 </template>
 
 <style scoped>
