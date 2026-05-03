@@ -14,7 +14,6 @@ const navigateTo = (path: string) => {
 
 <template>
   <div class="min-h-screen bg-linear-to-br from-white via-[#FA5BAF]/3 to-white">
-    <!-- Hero Section -->
     <section class="pt-16 md:pt-24 pb-20 px-6 text-center">
       <h1
         class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-4"
@@ -26,7 +25,6 @@ const navigateTo = (path: string) => {
         Connect with friends, organize your schedule, and manage your time effortlessly
       </p>
 
-      <!-- CTA Buttons -->
       <div v-if="!isLoggedIn()" class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
         <button
           @click="navigateTo('/login')"
@@ -55,17 +53,15 @@ const navigateTo = (path: string) => {
       </div>
     </section>
 
-    <!-- Features Section -->
     <section class="py-20 px-6 max-w-6xl mx-auto">
       <h2
         class="text-4xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-16"
         style="font-family: 'Quicksand', sans-serif"
       >
-        Why Choose Time Organiser?
+        Why choose time organiser?
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Feature 1 -->
         <div
           class="bg-white/80 backdrop-blur rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:shadow-pink-200/50 transition-all duration-300 transform hover:-translate-y-2 border border-[#FA5BAF]/10"
         >
@@ -78,14 +74,13 @@ const navigateTo = (path: string) => {
             class="text-2xl font-bold text-gray-800 text-center mb-3"
             style="font-family: 'Quicksand', sans-serif"
           >
-            Connect with Friends
+            Connect with friends
           </h3>
           <p class="text-gray-600 text-center">
             Build your network and easily keep track of your closest friends and colleagues
           </p>
         </div>
 
-        <!-- Feature 2 -->
         <div
           class="bg-white/80 backdrop-blur rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:shadow-pink-200/50 transition-all duration-300 transform hover:-translate-y-2 border border-[#FA5BAF]/10"
         >
@@ -105,7 +100,6 @@ const navigateTo = (path: string) => {
           </p>
         </div>
 
-        <!-- Feature 3 -->
         <div
           class="bg-white/80 backdrop-blur rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:shadow-pink-200/50 transition-all duration-300 transform hover:-translate-y-2 border border-[#FA5BAF]/10"
         >
@@ -118,7 +112,7 @@ const navigateTo = (path: string) => {
             class="text-2xl font-bold text-gray-800 text-center mb-3"
             style="font-family: 'Quicksand', sans-serif"
           >
-            Organize Everything
+            Organize everything
           </h3>
           <p class="text-gray-600 text-center">
             Manage assignments, tasks, hobbies, and personal projects all in one place
@@ -127,16 +121,14 @@ const navigateTo = (path: string) => {
       </div>
     </section>
 
-    <!-- Features Highlights -->
     <section class="py-20 px-6 max-w-6xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Left Side -->
         <div class="flex flex-col justify-center">
           <h2
             class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FA5BAF] to-[#E83E8C] mb-6"
             style="font-family: 'Quicksand', sans-serif"
           >
-            Stay Organized
+            Stay organized
           </h2>
           <ul class="space-y-4">
             <li class="flex items-center gap-3">
@@ -165,12 +157,10 @@ const navigateTo = (path: string) => {
                 class="w-6 h-6 bg-[#FA5BAF] rounded-full flex items-center justify-center text-white text-sm"
                 >✓</span
               >
-              <span class="text-gray-700">Get reminders for important events</span>
             </li>
           </ul>
         </div>
 
-        <!-- Right Side -->
         <div class="flex flex-col justify-center">
           <h2
             class="text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-6"
@@ -205,14 +195,12 @@ const navigateTo = (path: string) => {
                 class="w-6 h-6 bg-[#FA5BAF] rounded-full flex items-center justify-center text-white text-sm"
                 >✓</span
               >
-              <span class="text-gray-700">Real-time notifications</span>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="py-20 px-6">
       <div
         class="max-w-4xl mx-auto bg-linear-to-r from-[#FA5BAF]/20 to-[#E83E8C]/20 rounded-3xl p-12 text-center"
@@ -243,7 +231,6 @@ const navigateTo = (path: string) => {
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-12 px-6 border-t border-gray-200">
       <div class="max-w-6xl mx-auto text-center text-gray-600">
         <p>&copy; 2025 Time Organiser. All rights reserved.</p>
