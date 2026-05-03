@@ -35,6 +35,28 @@ export interface Availability{
 
 }
 
+export interface AvailabilityPeriod {
+  date?: string
+  start_time: string | Date
+  end_time: string | Date
+}
+
+export interface BefriendUser {
+  id: string
+  name: string
+  username: string
+  age: number
+  city: string
+  timezone: string
+  availability: string
+  status: "friend" | "not-befriended"
+  bio: string
+  hobbies: string[]
+  initials: string
+  availabilityPeriods?: AvailabilityPeriod[]
+  availability_periods?: AvailabilityPeriod[]
+}
+
 export interface Requests{
     user_id: string;
     partner_id: string;

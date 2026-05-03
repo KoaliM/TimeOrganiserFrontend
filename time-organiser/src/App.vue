@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import NavbarComponent from './components/NavbarComponent.vue'
-//import { useRoute } from 'vue-router'
-import HomeView from './views/HomeView.vue'
-
-//const route = useRoute()
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -12,7 +9,7 @@ import HomeView from './views/HomeView.vue'
       <NavbarComponent />
     </header>
     <main>
-      <HomeView />
+      <RouterView />
     </main>
   </div>
 </template>

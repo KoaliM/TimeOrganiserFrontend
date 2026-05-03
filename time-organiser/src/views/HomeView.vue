@@ -35,7 +35,7 @@ const navigateTo = (path: string) => {
         </button>
         <button
           @click="navigateTo('/about')"
-          class="px-8 py-3 bg-white border-2 border-[#FA5BAF] text-[#FA5BAF] rounded-full font-bold text-lg hover:bg-[#FA5BAF]/5 transition-all duration-300 transform hover:scale-105\"
+          class="px-8 py-3 bg-white border-2 border-[#FA5BAF] text-[#FA5BAF] rounded-full font-bold text-lg hover:bg-[#FA5BAF]/5 transition-all duration-300 transform hover:scale-105"
           style="font-family: 'Quicksand', sans-serif"
         >
           Learn More
