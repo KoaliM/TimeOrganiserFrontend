@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useUserStore } from '@/stores/users'
 import { RouterLink } from 'vue-router'
+import LogoComponent from './LogoComponent.vue'
+
 const userStore = useUserStore()
 </script>
 
@@ -8,12 +10,10 @@ const userStore = useUserStore()
   <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-[#FA5BAF]/10">
     <div class="flex items-center justify-between px-6 md:px-12 py-4">
       <!-- Logo -->
-      <RouterLink
-        to="/"
-        class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] hover:opacity-80 transition-opacity"
-        style="font-family: 'Quicksand', sans-serif"
-      >
-        TimeOrganiser
+      <RouterLink to="/" class="flex items-center hover:opacity-80 transition-opacity">
+        <div class="w-12 h-12 md:w-14 md:h-14">
+          <LogoComponent />
+        </div>
       </RouterLink>
 
       <!-- Center Navigation Links -->
