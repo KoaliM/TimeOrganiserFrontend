@@ -292,7 +292,7 @@ onMounted(() => {
     <section class="max-w-7xl mx-auto px-6 py-12 md:py-16">
       <div class="mb-10">
         <h1
-          class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-4"
+          class="text-4xl md:text-5xl font-bold leading-tight pb-1 text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-4"
           style="font-family: 'Quicksand', sans-serif"
         >
           Befriend

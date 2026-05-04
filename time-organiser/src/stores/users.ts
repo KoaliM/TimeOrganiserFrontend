@@ -13,6 +13,9 @@ export const useUserStore = defineStore('user', {
         //isAdmin: state => {return state.profile?.role.valueOf("Admin")},
     },
     actions: {
+        setProfile(profile: User) {
+            this.profile = profile;
+        },
         setAccessToken(token: string) {
 			this.accessToken = token;
 		},

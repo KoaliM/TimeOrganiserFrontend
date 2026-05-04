@@ -41,6 +41,20 @@ export interface AvailabilityPeriod {
   end_time: string | Date
 }
 
+export interface CalendarBlock {
+  id?: string
+  title?: string
+  date?: string
+  start_time: string | Date
+  end_time: string | Date
+  type?: 'task' | 'availability' | 'busy' | 'free'
+}
+
+export interface GoogleCalendarStatus {
+  connected: boolean
+  email?: string
+}
+
 export interface BefriendUser {
   id: string
   name: string

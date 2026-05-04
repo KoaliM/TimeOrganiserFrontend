@@ -16,7 +16,7 @@ const navigateTo = (path: string) => {
   <div class="min-h-screen bg-linear-to-br from-white via-[#FA5BAF]/3 to-white">
     <section class="pt-16 md:pt-24 pb-20 px-6 text-center">
       <h1
-        class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-4"
+        class="text-4xl md:text-6xl font-bold leading-tight pb-1 text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-4"
         style="font-family: 'Quicksand', sans-serif"
       >
         Organize Your Time, Together
@@ -55,7 +55,7 @@ const navigateTo = (path: string) => {
 
     <section class="py-20 px-6 max-w-6xl mx-auto">
       <h2
-        class="text-4xl font-bold text-center text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-16"
+        class="text-4xl font-bold leading-tight pb-1 text-center text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-16"
         style="font-family: 'Quicksand', sans-serif"
       >
         Why choose time organiser?
@@ -125,7 +125,7 @@ const navigateTo = (path: string) => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="flex flex-col justify-center">
           <h2
-            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FA5BAF] to-[#E83E8C] mb-6"
+            class="text-3xl font-bold leading-tight pb-1 text-transparent bg-clip-text bg-gradient-to-r from-[#FA5BAF] to-[#E83E8C] mb-6"
             style="font-family: 'Quicksand', sans-serif"
           >
             Stay organized
@@ -163,7 +163,7 @@ const navigateTo = (path: string) => {
 
         <div class="flex flex-col justify-center">
           <h2
-            class="text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-6"
+            class="text-3xl font-bold leading-tight pb-1 text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-6"
             style="font-family: 'Quicksand', sans-serif"
           >
             Meet with Friends
