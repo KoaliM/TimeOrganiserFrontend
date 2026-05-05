@@ -290,18 +290,6 @@ onMounted(() => {
 <template>
   <div class="min-h-screen bg-linear-to-br from-white via-[#FA5BAF]/3 to-white">
     <section class="max-w-7xl mx-auto px-6 py-12 md:py-16">
-      <div class="mb-10">
-        <h1
-          class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#FA5BAF] to-[#E83E8C] mb-4"
-          style="font-family: 'Quicksand', sans-serif"
-        >
-          Befriend
-        </h1>
-        <p class="text-lg text-gray-600 max-w-3xl">
-          Search for users and request friendships with people who match your schedule.
-        </p>
-      </div>
-
       <div
         class="bg-white/85 backdrop-blur rounded-2xl shadow-lg border border-[#FA5BAF]/10 p-6 mb-10"
       >
