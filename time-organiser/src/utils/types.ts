@@ -89,3 +89,9 @@ export interface Goals{
     status: string;
     priority: string;
 }
+
+export interface RegisterRequest {
+  username: string;
+  email: string;
+  password: string;
+}

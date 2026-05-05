@@ -490,7 +490,7 @@ onMounted(() => {
                 />
               </label>
               <label class="block">
-                <span class="text-sm font-semibold text-gray-700">Assignment id</span>
+                <span class="text-sm font-semibold text-gray-700">Assignment name</span>
                 <input
                   v-model="taskForm.assignment_id"
                   type="text"
